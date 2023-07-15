@@ -504,47 +504,129 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
 ### Exercises: Level 1
 
 1. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
+let firstName= "Milo"
+let lastName= "Juice"
+let country= "Kenya"
+let city= "Mombasa"
+let age= 20
+let isMarried=true
+let year =2005
+console.log(typeof firstName)
+console.log(typeof lastName)
+console.log(typeof country)
+console.log(typeof city)
+console.log(typeof age)
+console.log(typeof isMarried)
+console.log(typeof year)
+
+
 2. Check if type of '10' is equal to 10
+let j= '10'
+let p =10
+let z= typeof j == typeof p
+console.log(z)
 3. Check if parseInt('9.8') is equal to 10
+let g= parseInt('9.8')
+let h= g ==10
+console.log(h)
+
 4. Boolean value is either true or false.
    1. Write three JavaScript statement which provide truthy value.
+let i= "Eunice"
+let t=true
+let w= 15
    2. Write three JavaScript statement which provide falsy value.
+let i= ""
+let t=false
+let w= 0
 
 5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
    1. 4 > 3
+   console.log( 4 > 3)//true
    2. 4 >= 3
+   console.log( >= 3)//true
    3. 4 < 3
+   console.log(4 < 3)//false
    4. 4 <= 3
+   console.log(4 <= 3)//false
    5. 4 == 4
+   console.log(4 == 4)//true
    6. 4 === 4
+   console.log(4 === 4)//true
    7. 4 != 4
+   console.log(4 != 4)//false
    8. 4 !== 4
+   console.log( 4 !== 4)//false
    9. 4 != '4'
+   console.log(4 != '4')//false
    10. 4 == '4'
+   console.log(4 == '4')//true
    11. 4 === '4'
+   console.log(4 === '4')//false
    12. Find the length of python and jargon and make a falsy comparison statement.
+const word1 = "python";
+const word2 = "jargon";
+
+const length1 = word1.length;
+const length2 = word2.length;
+
+const falsy = length1 === length2;
+
+console.log(`The length of "${word1}" is ${length1}`);
+console.log(`The length of "${word2}" is ${length2}`);
+console.log(`The comparison statement is ${falsy}`);
 
 6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
    1. 4 > 3 && 10 < 12
+   console.log( 4 > 3 && 10 < 12)//true
    2. 4 > 3 && 10 > 12
+   console.log(4 > 3 && 10 > 12)//false
    3. 4 > 3 || 10 < 12
+   console.log(4 > 3 || 10 < 12)//true
    4. 4 > 3 || 10 > 12
+   console.log(4 > 3 || 10 > 12)//true
    5. !(4 > 3)
+   console.log(!(4 > 3))//false
    6. !(4 < 3)
+   console.log(!(4 < 3))//true
    7. !(false)
+   console.log(!(false))//true
    8. !(4 > 3 && 10 < 12)
+   console.log(!(4 > 3 && 10 < 12))//false
    9. !(4 > 3 && 10 > 12)
+   console.log(!(4 > 3 && 10 > 12))//true
    10. !(4 === '4')
+   console.log(!(4 === '4'))//true
    11. There is no 'on' in both dragon and python
+    let u= "dragon"
+   let v= "python"
+   console.log(u && v.includes('on'))
 
 7. Use the Date object to do the following activities
    1. What is the year today?
+   let today= new Date;
+   console.log(today.getFullYear())
    2. What is the month today as a number?
+    let month= new Date;
+   console.log(month.getMonth())
    3. What is the date today?
+   let date= new Date;
+   console.log(date.getDate())
    4. What is the day today as a number?
+   let day= new Date;
+   console.log(day.getDay())
    5. What is the hours now?
+   let hours= new Date;
+   console.log(hours.getHours())
    6. What is the minutes now?
+   let minutes= new Date;
+   console.log(minutes.getMinutes())
    7. Find out the numbers of seconds elapsed from January 1, 1970 to now.
+   const recent = new Date();
+const secondsElapsed = Math.floor(recent.getTime() / 1000);
+console.log(`Seconds elapsed since January 1, 1970: ${secondsElapsed}`);
+
+
 
 ### Exercises: Level 2
 
